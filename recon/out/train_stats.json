@@ -1,0 +1,17 @@
+{
+  "scene": "Tanks&Temples Truck (3DGS COLMAP release)",
+  "trainer": "Brush v0.3.0, Apple M3 (integrated GPU, Metal/WebGPU)",
+  "steps": 7000,
+  "max_resolution_px": 640,
+  "splats": 400000,
+  "sh_degree": 3,
+  "train_views": 219,
+  "eval_views": 32,
+  "eval_split": "every 8th image held out",
+  "eval_psnr": 26.27,
+  "eval_ssim": 0.912,
+  "training_time_s": 359,
+  "steps_per_s": 20.4,
+  "gpu_mem_reserved_mb": 661.3,
+  "source": "Brush viewer Training Stats panel (screenshot)"
+}

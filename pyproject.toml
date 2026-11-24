@@ -1,0 +1,39 @@
+[project]
+name = "mapdiff"
+version = "0.1.0"
+description = "Street-level map change detection: open-vocab detection, multi-view triangulation, H3 + OSM diff, 3D reconstruction"
+authors = [
+    { name = "Utkarsh Sinha", email = "91904768+US30@users.noreply.github.com" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "clip",
+    "ftfy>=6.3.1",
+    "geopandas>=1.0",
+    "h3>=4.1",
+    "open3d>=0.19",
+    "plyfile>=1.1.5",
+    "pydeck>=0.9",
+    "pyproj>=3.7.2",
+    "python-dotenv>=1.2.4",
+    "requests>=2.34.2",
+    "scikit-learn>=1.9.1",
+    "streamlit>=1.40",
+    "tqdm>=4.70.1",
+    "ultralytics>=8.3",
+]
+
+[project.scripts]
+mapdiff = "mapdiff.cli:main"
+
+[build-system]
+requires = ["uv_build>=0.9.8,<0.10.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.2.0",
+]
+
+[tool.uv.sources]
+clip = { git = "https://github.com/ultralytics/CLIP.git" }

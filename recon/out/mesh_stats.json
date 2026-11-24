@@ -1,0 +1,8 @@
+{
+  "gaussians": 400000,
+  "kept_gaussians": 145271,
+  "points_after_cleanup": 49455,
+  "mesh_vertices": 218330,
+  "mesh_triangles": 431798,
+  "watertight": false
+}
